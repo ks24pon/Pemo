@@ -19,7 +19,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - 3005:3005
+      - 3000:3000
     stdin_open: true
     tty: true
     depends_on:
