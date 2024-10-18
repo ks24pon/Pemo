@@ -1,0 +1,15 @@
+<h1>犬の投稿一覧</h1>
+<%= link_to '新規投稿', new_dog_path %>
+<ul>
+  <% @dog.each do |dog| %>
+    <li>
+      <%= link_to dog.name, dog %>
+      <%= link_to dog.description, dog %>
+      <%= link_to dog.age, dog %>
+      <%= link_to dog.breed, dog %>
+      <%= link_to dog.image, dog %>
+      <%= link_to '編集', edit_dog_path(dog) %> |
+      <%= link_to '削除', dog, method: :delete, data: { confirm: '本当に削除しますか？' } %>
+    </li>
+  <% end %>
+</ul>

@@ -16,6 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_10_12_132107) do
     t.string "breed"
     t.integer "age"
     t.text "description"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
